@@ -1,0 +1,28 @@
+{
+  "name": "1C-EDO-Diadoc-Invitations",
+  "version": "0.1.1",
+  "target": "1С:Бухгалтерия ПРОФ 3.0.202.14",
+  "fixes": [
+    "Replace unsupported &НаКлиентеБезКонтекста with &НаКлиенте",
+    "Access dynamically added form attributes through ЭтаФорма",
+    "Update external processing registration version to 0.1.1"
+  ],
+  "artifacts": {
+    "epf": {
+      "name": "РассылкаПриглашений1СЭДО_Диадок_BP_3.0.202.14_v0.1.1.epf",
+      "sha256": "386caed8d546a5cbfea38b2d3ccdb809954bedb5db965b89aa35390061088c40",
+      "size": 16573
+    },
+    "package": {
+      "name": "РассылкаПриглашений1СЭДО_Диадок_BP_3.0.202.14_v0.1.1_package.zip",
+      "sha256": "65cda4ffe5b4ab6806adfc88e0aee5a99fb21450ee7eb5ef7bceb7d43247f53f",
+      "size": 20922
+    }
+  },
+  "validation": {
+    "container_roundtrip": "PASS",
+    "unsupported_annotation_occurrences": 0,
+    "direct_dynamic_form_attribute_references": 0,
+    "runtime_in_1c": "pending"
+  }
+}
