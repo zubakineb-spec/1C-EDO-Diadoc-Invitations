@@ -1,0 +1,20 @@
+{
+  "name": "1C-EDO-Diadoc-Invitations",
+  "version": "0.1.0",
+  "target": "1С:Бухгалтерия ПРОФ 3.0.202.14",
+  "diadoc_module_detected_version": "4.68.0",
+  "artifacts": {
+    "epf": {
+      "name": "РассылкаПриглашений1СЭДО_Диадок_BP_3.0.202.14_v0.1.0.epf",
+      "sha256": "a03084ccd495fccba4b01abff245de5adba5a54e89bd32178bf5c567706da9fe",
+      "size": 16560
+    },
+    "package": {
+      "name": "РассылкаПриглашений1СЭДО_Диадок_BP_3.0.202.14_v0.1.0_package.zip",
+      "sha256": "6650b58e22b46697055bddc191d498f069cee03d8c1feef03a8fda18b4cdf14e",
+      "size": 22028
+    }
+  },
+  "runtime_validation": "not yet performed in actual 1C runtime",
+  "notes": "Source modules and README are committed to GitHub. Canonical binary hashes identify the build exactly."
+}
