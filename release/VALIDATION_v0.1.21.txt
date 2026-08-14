@@ -1,0 +1,15 @@
+VALIDATION v0.1.21
+version_form_comment=PASS
+version_object=PASS
+2BM_guard_def=PASS
+dryrun_excludes_non2BM=PASS
+preflight_guard=PASS
+data_guard=PASS
+no_forced_diadoc_sync=PASS
+no_file_picker=PASS
+func_balance=PASS
+proc_balance=PASS
+FORM_FUNCTIONS=0
+FORM_PROCEDURES=0
+EPF_ROUNDTRIP=PASS
+SHA256=8f7d912d638392f74429f66ca494cdfe37529d4eb026ec82809790849957c112

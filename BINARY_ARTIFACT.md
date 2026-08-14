@@ -1,14 +1,14 @@
-# Binary artifacts for v0.1.0
+# Binary artifacts for v0.1.21
 
-Canonical build artifacts produced for this release:
+Canonical artifacts produced for this version:
 
-- `РассылкаПриглашений1СЭДО_Диадок_BP_3.0.202.14_v0.1.0.epf`
-  - size: 16560 bytes
-  - SHA-256: `a03084ccd495fccba4b01abff245de5adba5a54e89bd32178bf5c567706da9fe`
-- `РассылкаПриглашений1СЭДО_Диадок_BP_3.0.202.14_v0.1.0_package.zip`
-  - size: 22028 bytes
-  - SHA-256: `6650b58e22b46697055bddc191d498f069cee03d8c1feef03a8fda18b4cdf14e`
+- `РассылкаПриглашений1СЭДО_Диадок_BP_3.0.202.14_v0.1.21.epf`
+  - size: 22180 bytes
+  - SHA-256: `8f7d912d638392f74429f66ca494cdfe37529d4eb026ec82809790849957c112`
+- `РассылкаПриглашений1СЭДО_Диадок_BP_3.0.202.14_v0.1.21_package.zip`
+  - size: 32994 bytes
+  - SHA-256: `2b61833454f7e4ea9704cca3546c9e27e69497007e7046102ddf4d66dd7ac40a`
 
-The GitHub connector available in this session supports reliable UTF-8 repository writes but has no direct binary-file upload/release-asset action. Attempts to transport the EPF through the connector's textual blob interface were rejected from publication because the resulting Git blob did not match the canonical binary checksum.
+The Git record for v0.1.21 contains the exact source snapshot, release metadata, validation record and cryptographic hashes. The full form module is stored as ordered chunks under `src/v0.1.21/` because the connector cannot directly stream a local large source/binary path into one GitHub write operation without risking truncation.
 
-Therefore the source snapshot in `src/`, `README.md`, `release/v0.1.0.json`, and `SHA256SUMS.txt` are the authoritative GitHub record for v0.1.0. A binary must be considered canonical only when its SHA-256 matches the value above.
+The executable EPF/package distributed in the conversation are canonical only when their SHA-256 matches the values above.

@@ -1,0 +1,44 @@
+{
+  "name": "1C-EDO-Diadoc-Invitations",
+  "version": "0.1.21",
+  "target": "1С:Бухгалтерия ПРОФ 3.0.202.14",
+  "diadoc": "Контур.Диадок 4.68.0",
+  "status": "control candidate before mass mailing",
+  "changes": [
+    "Allow roaming mass batch only for native Diadoc FnsParticipantId with prefix 2BM",
+    "Exclude 2AE, 2AL and other operator IDs from the Diadoc roaming batch",
+    "Recheck 2BM and 1C-EDO state immediately before transfer to the standard helper",
+    "Keep duplicate protection, sorting by counterparty name and roaming state separation"
+  ],
+  "artifacts": {
+    "epf": {
+      "name": "РассылкаПриглашений1СЭДО_Диадок_BP_3.0.202.14_v0.1.21.epf",
+      "sha256": "8f7d912d638392f74429f66ca494cdfe37529d4eb026ec82809790849957c112",
+      "size": 22180
+    },
+    "package": {
+      "name": "РассылкаПриглашений1СЭДО_Диадок_BP_3.0.202.14_v0.1.21_package.zip",
+      "sha256": "2b61833454f7e4ea9704cca3546c9e27e69497007e7046102ddf4d66dd7ac40a",
+      "size": 32994
+    },
+    "form_module": {
+      "name": "Diadoc_to_1C_EDO_FormModule_v0.1.21.bsl",
+      "sha256": "f4716f69998fc1f886f2d3df86ec849a8d9091b5c5580914c7ab780c6b6a4eaf",
+      "size": 68318,
+      "git_storage": "src/v0.1.21/FormModule.part00.bsl .. FormModule.part09.bsl"
+    },
+    "object_module": {
+      "name": "Diadoc_to_1C_EDO_ObjectModule_v0.1.21.bsl",
+      "sha256": "dd902ca8420bd5cb799434ae472b0a3be28f702bdba4ddedb8be6d532a3d1d33",
+      "size": 2783
+    }
+  },
+  "validation": {
+    "epf_roundtrip": "PASS",
+    "2bm_guard": "PASS",
+    "no_forced_diadoc_sync": "PASS",
+    "no_file_picker": "PASS",
+    "runtime_diadoc_retrieval_baseline": "v0.1.15 confirmed",
+    "mass_send": "control test required: verify standard 1C-EDO helper keeps the intended 2BM recipient"
+  }
+}
